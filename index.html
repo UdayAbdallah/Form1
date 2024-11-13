@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Preferences Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="form" onsubmit="return validateForm()">
+        <h1>For Your Car</h1>
+        <fieldset>
+            <legend>Your Name</legend>
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="sname">Second Name</label><br>
+            <input type="text" id="sname" name="sname"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Enter a Phone Number:</legend>
+            <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select Your Favorite Color</legend>
+            <label for="favcolor">Favorite Color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Favorite Style</legend>
+            <img src="./maxresdefault.jpg" alt="Car Styles" width="350px"><br>
+            <input type="checkbox" id="suv" name="car_style" value="suv">
+            <label for="suv">SUV</label><br>
+            <input type="checkbox" id="coupe" name="car_style" value="coupe">
+            <label for="coupe">Coupe</label><br>
+            <input type="checkbox" id="convertible" name="car_style" value="convertible">
+            <label for="convertible">Convertible</label><br><br>
+            <input type="checkbox" id="minivan" name="car_style" value="minivan">
+            <label for="minivan">Minivan</label><br>
+            <input type="checkbox" id="pickup" name="car_style" value="pickup">
+            <label for="pickup">Pick-Up</label><br>
+            <input type="checkbox" id="sedan" name="car_style" value="sedan">
+            <label for="sedan">Sedan</label><br><br>
+            <input type="checkbox" id="limousine" name="car_style" value="limousine">
+            <label for="limousine">Limousine</label><br>
+            <input type="checkbox" id="microcar" name="car_style" value="microcar">
+            <label for="microcar">Microcar</label><br>
+            <input type="checkbox" id="sport" name="car_style" value="sport">
+            <label for="sport">Sport</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Birthday</legend>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Favorite Car</legend>
+            <label for="cars">Choose a Car:</label>
+            <select id="cars" name="cars">
+                <option value=""></option>
+                <option value="lamborghini">Lamborghini</option>
+                <option value="ferrari">Ferrari</option>
+                <option value="tesla">Tesla</option>
+                <option value="formula">Formula</option>
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes</option>
+            </select>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+<script src="./main.js"></script>
+</body>
+</html>

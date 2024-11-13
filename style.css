@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+    background-color: burlywood;
+}
+form{
+    background-color: bisque;
+}
+fieldset{
+    color: darkblue;
+}
+[type="text"]{
+    background-color: black;
+    color: white;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.8s;
+    transition-timing-function: linear;
+}
+[type="text"]:hover{
+    width: 500px;
+}
+[type="tel"]{
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.8s;
+    transition-timing-function: linear;
+}
+[type="tel"]:hover{
+    width: 500px;
+}
+
